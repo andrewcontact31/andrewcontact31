@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Ly Andrew</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            background: linear-gradient(to bottom, #e0f7fa, #b2ebf2); /* turquoise clair dégradé */
+            font-family: Arial, sans-serif;
+        }
+        .header {
+            text-align: center;
+            padding: 20px;
+            background: #00bcd4;
+            color: white;
+            font-size: 28px;
+            font-weight: bold;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+        iframe {
+            border: none;
+            width: 100%;
+            height: calc(100vh - 180px);
+            margin-top: 10px;
+        }
+        .download-btn {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 18px 40px;
+            background: #00bcd4;
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 50px;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+            z-index: 1000;
+        }
+        .download-btn:hover {
+            background: #0097a7;
+            transform: translateX(-50%) scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="header">CV Ly Andrew</div>
+
+    <!-- Viewer PDF.js fluide et responsive -->
+    <iframe 
+        src="https://mozilla.github.io/pdf.js/web/viewer.html?file=https://raw.githubusercontent.com/andrewcontact31/andrewcontact31/main/LY_andrew_CV.pdf&pagemode=none"
+        title="CV de Ly Andrew">
+    </iframe>
+
+    <!-- Bouton téléchargement ultra visible -->
+    <a href="https://raw.githubusercontent.com/andrewcontact31/andrewcontact31/main/LY_andrew_CV.pdf" download="CV_Ly_Andrew.pdf" class="download-btn">
+        📄 Télécharger le CV (PDF)
+    </a>
+</body>
+</html>
